@@ -52,15 +52,15 @@ class World:
             if all_null:
                 continue
             # PRINT NORTH CONNECTION ROW
-            str += "#"
+            # str += "#"
             for room in row:
                 if room is not None and room.n_to is not None:
                     str += "  |  "
                 else:
                     str += "     "
-            str += "#\n"
+            str += "\n"
             # PRINT ROOM ROW
-            str += "#"
+            # str += "#"
             for room in row:
                 if room is not None and room.w_to is not None:
                     str += "-"
@@ -74,15 +74,15 @@ class World:
                     str += "-"
                 else:
                     str += " "
-            str += "#\n"
+            str += "\n"
             # PRINT SOUTH CONNECTION ROW
-            str += "#"
+            # str += "#"
             for room in row:
                 if room is not None and room.s_to is not None:
                     str += "  |  "
                 else:
                     str += "     "
-            str += "#\n"
+            str += "\n"
         print(str)
         print("#####")
 
